@@ -31,7 +31,12 @@ Using http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html and your
 
   1. `SQL`:
 
+      SELECT COUNT(*)
+      FROM account_holders;
+
   2. `ActiveRecord`:
+
+      AccountHolder.count
 
 1. How many `Account` records are there?
 
