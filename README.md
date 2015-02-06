@@ -41,12 +41,18 @@ Using http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html and your
 1. How many `Account` records are there?
 
   1. `SQL`:
+      SELECT COUNT(*)
+      FROM accounts
 
   2. `ActiveRecord`:
+
+      Account.count
 
 1. How many `Account` records are there with the `account_type = 'savings'`?
 
   1. `SQL`:
+
+      
 
   2. `ActiveRecord`:
 
