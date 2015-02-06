@@ -42,7 +42,7 @@ Using http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html and your
 
   1. `SQL`:
       SELECT COUNT(*)
-      FROM accounts
+      FROM accounts;
 
   2. `ActiveRecord`:
 
@@ -52,9 +52,13 @@ Using http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html and your
 
   1. `SQL`:
 
-      
+      SELECT COUNT(*)
+      FROM accounts
+      WHERE account_type = 'savings';
 
   2. `ActiveRecord`:
+
+      Account.where(account_type: 'savings').count
 
 1. How many `Transaction` records are there with the `transaction_type_id` equal to the `TransactionType` for `'debit'`?
 
