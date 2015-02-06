@@ -64,6 +64,10 @@ Using http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html and your
 
   1. `SQL`:
 
+  SELECT COUNT(transaction_type_id)
+  FROM transactions, transaction_types
+  WHERE transactions.transaction_type_id = transaction_types.id AND transaction_type = 'debit'
+
   2. `ActiveRecord`:
 
 1. What is the sum of all debit transactions?
